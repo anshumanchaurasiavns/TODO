@@ -9,7 +9,7 @@ app=express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/stones2milestones?readPreference=primary",{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect("mongodb://localhost:27017/dbname?readPreference=primary",{useNewUrlParser:true,useUnifiedTopology:true});
 
 let itemSchema={
     name: String,
