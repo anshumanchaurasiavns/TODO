@@ -9,7 +9,7 @@ app=express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://anshuman_chaurasia:test123@cluster0-9nuyr.mongodb.net/todolistDB",{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://anshuman_chaurasia:password@cluster0-9nuyr.mongodb.net/todolistDB",{useNewUrlParser:true,useUnifiedTopology:true});
 
 let itemSchema={
     name: String,
